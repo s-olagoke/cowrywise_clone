@@ -1,0 +1,322 @@
+:root {
+  --max-width: 2400px;
+}
+
+.box {
+  height: 100%;
+  
+}
+
+.logo {
+  width: 300px;
+}
+
+#navbar .navbar-links ul li a {
+  font-size: 1.5rem;
+}
+
+#navbar .navbar-buttons {
+  font-size: 1.35rem;
+}
+
+#showcase .showcase-items .showcase-left .testimonials {
+  right: 51.8%;
+    width: 600px;
+}
+
+#showcase .showcase-items .showcase-left .main-img {
+  height: 900px;
+}
+
+#showcase .showcase-items .showcase-left .testimonials p {
+  font-size: 1.5rem;
+}
+
+#showcase .showcase-items .showcase-left .testimonials small {
+  font-size: 1.25rem;
+}
+
+#showcase .showcase-items .showcase-left .thumbnails {
+  height: 100px;
+
+}
+
+#showcase .showcase-items .showcase-right .heading {
+ 
+  font-size: 6rem;
+margin-bottom: 2.5rem;
+}
+
+#showcase .showcase-items .showcase-right>p {
+  font-size: 2rem
+}
+
+#showcase .showcase-items .showcase-right input {
+ padding: 1.5rem
+
+}
+
+
+.form .btn {
+  padding: 1.15rem  2.5rem;
+  font-size: 1.35rem;
+}
+
+#financial .financial-items .financial-left h2 {
+  font-size: 3rem;
+
+}
+
+#financial .financial-items .financial-left>p {
+  font-size: 1.25rem;
+}
+
+#financial .financial-items .financial-left>div,
+#financial .financial-items .financial-right,
+#mutual .mutual-items .mutual-left,
+#mutual .mutual-items .mutual-right,
+#secure .secure-items .secure-left,
+#secure .secure-items .secure-right
+ {
+  height: 1400px;
+}
+
+#financial .financial-items .financial-left>div h3,
+#financial .financial-items .financial-right>h3,
+#mutual .mutual-items .mutual-left>h3,
+#mutual .mutual-items .mutual-right>h3,
+#secure .secure-items .secure-left>h3,
+#secure .secure-items .secure-right>h3 {
+  font-size: 2rem;
+}
+
+#financial .financial-items .financial-left div>h3+p,
+#financial .financial-items .financial-right>h3+p,
+#mutual .mutual-items .mutual-left>h3+p,
+#mutual .mutual-items .mutual-right>h3+p,
+#secure .secure-items .secure-left>p,
+#secure .secure-items .secure-right>h3+p {
+  font-size: 1.25rem;
+ 
+}
+
+#financial .financial-items .financial-left div>h3+p+a,
+#financial .financial-items .financial-right>h3+p+a,
+#mutual .mutual-items .mutual-left>h3+p+a,
+#mutual .mutual-items .mutual-right>h3+p+a,
+#secure .secure-items .secure-left>h3+p+a,
+#secure .secure-items .secure-right>h3+a {
+  font-size: 1rem;
+}
+
+#download .download-content .download-right h2 {
+ font-size: 3rem
+}
+
+#download .download-content .download-right .download-items .item-1 {
+  font-size: 2rem
+}
+
+#download .download-content .download-right .download-items .item-1 div>div {
+ 
+  height: 185px;
+  width: 5px;
+}
+
+#download .download-content .download-right .download-items .item-2 div h3 {
+  font-size: 2rem;
+}
+
+#download .download-content .download-right .download-items .item-2 div {
+  margin-bottom: 7.45rem;
+}
+
+#download .download-content .download-right .download-items .item-2 div p {
+ font-size: 1.5rem;
+}
+
+
+#download .download-content .download-right .download-items .item-2 div:last-child {
+  margin-bottom: 4rem;
+}
+
+#download .download-content .download-right  button {
+ font-size: 1.5rem;
+}
+
+#keep {
+  padding-top: 15rem;
+
+}
+
+#keep h2 {
+  font-size: 2.5rem;
+}
+
+#keep .container>p {
+ font-size: 1.75rem;
+margin: 2.5rem 0;
+}
+
+#keep a {
+  
+  font-size: 1.25rem;
+}
+
+#keep .keep-items {
+  margin-top: 5rem;
+ 
+
+}
+
+#keep .keep-items .left-item {
+  margin-right: 15rem;
+}
+
+#keep .keep-items .bullet {
+  height: 20px;
+  width: 20px;
+  
+}
+
+#keep .keep-items .content {
+font-size: 1.35rem
+}
+
+#keep .keep-items .left-item .heading-content h3,
+#keep .keep-items .right-item .heading-content h3 {
+  font-size: 2rem
+}
+
+#keep .keep-items .left-item>div,
+#keep .keep-items .right-item>div {
+  margin-bottom: 6rem;
+}
+
+#why {
+  margin: 5rem 0 12rem 0;
+}
+
+#why .container>h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+ 
+}
+
+#why .container>h2 {
+  font-size: 2rem;
+}
+
+#why .why-content {
+  margin-top: 4rem;
+}
+
+#why .why-content .card-heading h2 {
+  font-size: 2.35rem;
+}
+
+#why .why-content .card-heading {
+  margin-bottom: 2rem;
+}
+
+#why .why-content .card-heading h2 span {
+  font-size: 1.65rem;
+}
+
+#why .why-content .card-heading .rating {
+  font-size: 1.5rem;
+}
+
+#why .why-content .card .card-body {
+  margin-bottom: 3rem;
+}
+
+#why .why-content .card .card-body h3 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem
+}
+
+#why .why-content .card .card-body p {
+  font-size: 1.65rem;
+ 
+}
+
+#why .why-content .card a {
+  font-size: 1rem;
+
+}
+
+#banner {
+  margin-bottom: 15rem;
+}
+
+#banner .signup-banner {
+  
+  border-radius: 20px;
+  padding: 10rem
+}
+
+#banner .signup-banner h1 {
+  font-size: 3rem;
+}
+
+#banner .signup-banner .subscribe {
+  padding: .35rem .5rem;
+  width: 600px;
+ 
+}
+
+#banner .signup-banner .subscribe button {
+  padding: .85rem 1.5rem;
+  font-size: 1.25rem;
+  
+}
+
+#footer {
+  margin-bottom: 5rem;
+}
+
+#footer .footer-content h3 {
+  margin-bottom: 4rem;
+  font-size: 1.75rem;
+}
+
+#footer .footer-content ul li {
+  margin-top: 1.5rem;
+}
+
+#footer .footer-content ul li {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.address {
+  margin: 7rem 0 4rem 0;
+}
+
+.address p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+
+}
+
+.socials a {
+  margin-right: 1.5rem;
+  font-size: 2rem;
+}
+
+.terms {
+  font-size: .9rem
+}
+
+.terms p {
+
+  margin-top: 2.5rem;
+
+}
+
+.footer {
+
+  font-size: 1rem;
+  
+}
