@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+:root {
+  --max-width: 1400px;
+  --bg-color: #f8f8f8;
+  --heading-color: #022b69;
+  --primary-color: #0066F5;
+  --secondary-color: #FFecec;
+  --yellow-color: #fcedd4;
+  --purple-color: #e4e9fd;
+  --purple-light: #6C82A3;
+  --secondary-light: #fdf3f6;
+  --cyan-color: #e1f6ff;
+  --purple-light: #eef1f9;
+  --text-color: #333333;
+  --white-color: #f8f8f8;
+  --line-height: 1.4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+
+a, li {
+  list-style: none;
+  text-decoration: none;
+  color: var(--text-color);
+ 
+}
+
+input[type='button'], button {
+border: none;
+}
+
+/* button and links */
+.btn, input {
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color)
+}
+
+/* Fonts */
+
+body {
+  font-family: 'Mulish', Arial;
+  background-color: var(--bg-color);
+  line-height: var(--line-height);
+}
+
+h1,h2,h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.heading {
+  font-size: 2.5rem
+}
+
+/* container */
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+/* card */
+.card {
+  border: 2px solid var(--purple-light);
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px #3333334b;
+}
+
+/* padding & margin */
+
+
+.p-1 { padding: 1rem }
+.p-2 { padding: 1.5rem }
+.p-3 { padding: 2.5rem }
+
+.py-1 { padding: 1rem 0 }
+.py-2 { padding: 1.5rem 0 }
+.py-3 { padding: 2.5rem 0 }
+
+.px-1 { margin: 0 1rem }
+.px-2 { margin: 0 1.5rem }
+.px-3 { margin: 0 2.5rem }
+
+.m-1 {  padding: 1rem }
+.m-2 { padding: 1.5rem }
+.m-3 { padding: 2.5rem }
+
+.mx-1 { margin: 0 1rem }
+.mx-2 { margin: 0 1.5rem }
+.mx-3 { margin: 0 2.5rem }
+
+.my-1 {  padding: 1rem 0 }
+.my-2 { padding: 1.5rem 0 }
+.my-3 { padding: 2.5rem 0 }
+
+
+.logo {
+  width: 200px;
+}
+
+/* Navbar */
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: var(--bg-color);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar .navbar-links ul {
+  display: flex;
+  align-self: center;
+}
+
+#navbar .navbar-links ul li a {
+  padding: 1rem
+}
+ 
+
+
+#navbar .navbar-links {
+  display: flex;
+ 
+}
+
+#navbar .navbar-buttons {
+  align-self: center;
+}
+
+/* Showcase */
+
+#showcase {
+  /* height: 100%; */
+  top: 100px;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 33%;
+  top: 0;
+  z-index: -2;
+}
+
+#showcase .showcase-items {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+#showcase .showcase-items .showcase-left {
+    align-self: center;
+    width: 50%;
+    padding-right: 3rem;
+    margin: 2.5% 0
+   
+    
+}
+
+#showcase .showcase-items .showcase-left .main-img {
+  height: 500px;
+  margin-bottom: 1rem;
+  background: url(../img/lady_1.png) no-repeat center center/cover
+}
+
+#showcase .showcase-items .showcase-left .bottom {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+#showcase .showcase-items .showcase-left .thumbnails {
+  display: flex;
+  height: 50px;
+}
+
+#showcase .showcase-items .showcase-left .thumbnails img {
+  display: inline-block;
+  margin-right: .5rem ;
+
+}
+
+#showcase .showcase-items .showcase-left .testimonials {
+  position: absolute;
+  right: 53.1%;
+  width: 350px;
+  background-color: var(--white-color);
+  padding: 1rem;
+  align-self: flex-end;
+}
+
+#showcase .showcase-items .showcase-left .testimonials > div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+#showcase .showcase-items .showcase-left .testimonials p {
+  font-size: .75rem;
+  color: var(--heading-color);
+}
+
+#showcase .showcase-items .showcase-left .testimonials small {
+  font-size: .70rem;
+}
+
+#showcase .showcase-items .showcase-left .testimonials small:first-child {
+  color: var(--heading-color);
+  font-weight: bold;
+}
+
+#showcase .showcase-items .showcase-left .testimonials small:last-child {
+  color: var(--primary-color)
+}
+
+#showcase .showcase-items .showcase-right {
+  align-self: center;
+  width: 50%;
+}
+
+#showcase .showcase-items .showcase-right .heading {
+color: var(--heading-color);
+font-size: 4.5rem;
+margin-bottom: 1.5rem;
+
+}
+
+#showcase .showcase-items .showcase-right > p {
+width: 75%;
+margin-bottom: 5rem;
+color: var(--text-color)
+
+}
+
+
+#showcase .showcase-items .showcase-right input {
+width: 60%;
+border: 1px solid var(--text-color);
+
+}
+
+#financial {
+  position: relative;
+  top: 150px
+}
+
+#financial .financial-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+#financial .financial-items .financial-left,
+#financial .financial-items .financial-right {
+  width: 46.5%;
+}
+
+#financial .financial-items .financial-left > div {
+  background: url(../img/jar.png) var(--purple-color) no-repeat bottom right/100%;
+  height: 800px;
+  border-radius: 1.5rem;
+  padding-top: 4rem;
+}
+
+#financial .financial-items .financial-left h2 {
+  font-size: 2rem;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+
+}
+
+#financial .financial-items .financial-left > p {
+  font-size: .85rem;
+  padding-right: 9rem;
+  margin-bottom: 3rem;
+  color: var(--heading-color)
+}
+
+#financial .financial-items .financial-left > div + p {
+  text-transform: capitalize;
+  color: var(--purple-light)
+}
+
+#financial .financial-items .financial-left > div  h3 {
+  font-size: 1.5rem;
+  color: var(--heading-color)
+}
+
+#financial .financial-items .financial-left div > h3 + p {
+  font-size: .75rem;
+  margin-bottom: 1.5rem;
+}
+
+#financial .financial-items .financial-left div > h3 + p + a {
+  text-transform: uppercase;
+  font-size: .65rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+#financial .financial-items .financial-right {
+position: relative;
+  top: -50px;
+}
+
+
+#financial .financial-items .financial-right {
+  background: url(../img/award.png) var(--yellow-color) no-repeat bottom right/100%;
+  height: 800px;
+  border-radius: 1.5rem;
+  padding-top: 4rem; 
+}
+
+
+#financial .financial-items .financial-right > h3 {
+  font-size: 1.5rem;
+  color: var(--heading-color)
+}
+
+#financial .financial-items .financial-right > h3 + p {
+  font-size: .75rem;
+  margin-bottom: 1.5rem;
+  color: var(--heading-color)
+}
+
+#financial .financial-items .financial-right > h3 + p + a {
+  text-transform: uppercase;
+  font-size: .65rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+#financial .financial-items .financial-right p.text {
+  text-transform: capitalize;
+  color: var(--heading-color);
+}
+
+/* Mutual */
+
+#mutual .mutual-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mutual .mutual-items .mutual-left,
+#mutual .mutual-items .mutual-right {
+  width: 46.5%;
+}
+
+
+#mutual .mutual-items .mutual-left {
+  background: url(../img/pizza.png) var(--cyan-color) no-repeat bottom right/100%;
+  height: 800px;
+  border-radius: 1.5rem;
+  padding-top: 4rem;
+  position: relative;
+  top: 200px
+}
+
+#mutual .mutual-items .mutual-left > h3 {
+  font-size: 1.5rem;
+  color: var(--heading-color)
+}
+
+#mutual .mutual-items .mutual-left > h3 + p {
+  font-size: .75rem;
+  margin-bottom: 1.5rem;
+  color: var(--heading-color)
+}
+
+#mutual .mutual-items .mutual-left > h3 + p + a {
+  text-transform: uppercase;
+  font-size: .65rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+#mutual .mutual-items .mutual-left p.text {
+  text-transform: capitalize;
+  color: var(--heading-color);
+}
+
+
+#mutual .mutual-items .mutual-right {
+  background: url(../img/umbrella.png) var(--secondary-color) no-repeat bottom right/100%;
+  height: 800px;
+  border-radius: 1.5rem;
+  padding-top: 4rem;
+  position: relative;
+  top: 20px
+}
+
+#mutual .mutual-items .mutual-right > h3 {
+  font-size: 1.5rem;
+  color: var(--heading-color)
+}
+
+#mutual .mutual-items .mutual-right > h3 + p {
+  font-size: .75rem;
+  margin-bottom: 1.5rem;
+  color: var(--heading-color)
+}
+
+#mutual .mutual-items .mutual-right > h3 + p + a {
+  text-transform: uppercase;
+  font-size: .65rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+#mutual .mutual-items .mutual-right p.text {
+  text-transform: capitalize;
+  color: var(--heading-color);
+}
+
+
+/* Secure */
+
+#secure .secure-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+#secure .secure-items .secure-left,
+#secure .secure-items .secure-right {
+  width: 46.5%;
+}
+
+
+#secure .secure-items .secure-left {
+  background: url(../img/cash.png) var(--primary-color) no-repeat bottom right/100%;
+  height: 800px;
+  border-radius: 1.5rem;
+  padding-top: 4rem;
+  position: relative;
+  top: 260px;
+  color: var(--white-color);
+}
+
+#secure .secure-items .secure-left > h3 {
+  font-size: 1.5rem;
+}
+
+#secure .secure-items .secure-left > p {
+  font-size: .75rem;
+  margin-bottom: 1.5rem;
+}
+
+#secure .secure-items .secure-left> h3 + p + a {
+  text-transform: uppercase;
+  font-size: .65rem;
+  font-weight: bold;
+  color: var(--white-color)
+}
+
+#secure .secure-items .secure-left p.text {
+  text-transform: capitalize;
+}
+
+
+#secure .secure-items .secure-right {
+  background: url(../img/chart.png) var(--purple-light) no-repeat bottom right/100%;
+  height: 800px;
+  border-radius: 1.5rem;
+  padding-top: 4rem;
+  position: relative;
+  top: 80px
+}
+
+#secure .secure-items .secure-right > h3 {
+  font-size: 1.5rem;
+  color: var(--heading-color)
+}
+
+#secure .secure-items .secure-right > h3 + p {
+  font-size: .75rem;
+  margin-bottom: 1.5rem;
+  color: var(--heading-color)
+}
+
+#secure .secure-items .secure-right > h3 + a {
+  text-transform: uppercase;
+  font-size: .65rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+#secure .secure-items .secure-right p.text {
+  text-transform: capitalize;
+  color: var(--heading-color);
+}
+ 
+
+/* Download */
+
+#download {
+  position: static;
+  margin-top: 23rem ;
+}
+
+#download .download-content {
+  display: flex;
+}
+
+#download .download-content .download-left,
+#download .download-content .download-right {
+  width: 50%;
+}
+
+#download .download-content .download-left {
+  text-align: center;
+
+}
+
+#download .download-content .download-left img {
+  width: 55%;
+}
+
+#download .download-content .download-right h2  {
+  color: var(--heading-color);
+  width: 50%;
+  margin-bottom: 2.5rem;
+}
+
+#download .download-content .download-right .download-items {
+  display: flex;
+
+}
+
+#download .download-content .download-right .download-items .item-1 {
+  margin-right: 1rem;
+ 
+}
+
+#download .download-content .download-right .download-items .item-1 div {
+  display: flex;
+  align-items: center;
+
+
+}
+
+#download .download-content .download-right .download-items .item-1 h3 {
+  color: var(--primary-color);
+}
+
+#download .download-content .download-right .download-items .item-1 div {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#download .download-content .download-right .download-items .item-1 div > div {
+  background-color: var(--primary-color);
+  height: 95px;
+  width: 2px;
+}
+
+#download .download-content .download-right .download-items .item-2 div  {
+  margin-bottom: 2.65rem;
+}
+
+#download .download-content .download-right .download-items .item-2 div h3 {
+  color: var(--heading-color);
+  margin-bottom: .5rem;
+}
+
+#download .download-content .download-right .download-items .item-2 div p {
+  width: 60%;
+}
+
+#keep {
+  margin-top: 7rem;
+  background: url(../img/money.png) no-repeat center right/50% var(--primary-color);
+  color: var(--white-color);
+  padding-top: 7rem;
+}
+
+#keep .container > p {
+  margin: 1.5rem 0;
+  text-transform: capitalize;
+  font-weight: lighter;
+  width: 40%;
+}
+
+#keep a {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: .65rem;
+}
+
+#keep .keep-items {
+  margin-top: 2.5rem;
+  display: flex;
+  width: 100%;
+  
+}
+
+#keep .keep-items .left-item {
+  margin-right: 10rem;
+}
+
+#keep .keep-items .bullet {
+  height: 10px;
+  width: 10px;
+  background-color: var(--white-color);
+}
+
+#keep .keep-items .left-item,
+#keep .keep-items .right-item {
+  width: 27%;
+ 
+}
+
+#keep .keep-items .left-item > div,
+#keep .keep-items .right-item > div {
+ margin-bottom: 2rem;
+}
+
+#keep .keep-items .left-item .heading-content,
+ #keep .keep-items .right-item .heading-content  {
+  display: flex;
+  align-content: center;
+
+}
+
+#keep .keep-items .left-item .heading-content .bullet,
+#keep .keep-items .right-item .heading-content .bullet {
+  align-self: center;
+  margin-right: 1rem;
+}
+
+#keep .keep-items p {
+  margin-top: .75rem;
+  margin-left: 1.5rem;
+}
+
+
+/* Why */
+#why {
+  margin: 2rem 0 6rem 0;
+}
+
+#why .container > h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+}
+
+
+#why .container > h2 {
+ color: var(--heading-color)
+}
+
+#why .container > h2 span {
+  color: var(--purple-light)
+}
+
+#why .why-content {
+  margin-top: 3rem;
+  display: flex;
+  gap: 3rem
+}
+
+#why .why-content .card-heading {
+  display: flex;
+  gap: 1.2rem
+}
+
+#why .why-content .card-heading h2 {
+  font-size: 1.35rem;
+  color: var(--heading-color);
+  margin-bottom: .75rem;
+}
+
+#why .why-content .card-heading h2 span {
+  font-size: .65rem;
+}
+
+
+#why .why-content .card-heading .rating {
+  color: gold;
+  align-self: center;
+  font-size: .65rem;
+}
+
+#why .why-content .card .card-body {
+  margin-bottom: 1.25rem;
+}
+
+#why .why-content .card .card-body h3 {
+  color: var(--heading-color);
+  font-size: 1.15rem;
+  margin-bottom: .35rem
+}
+
+#why .why-content .card a {
+  font-size: .65rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+#banner {
+  margin-bottom: 7rem;
+}
+
+
+#banner .signup-banner {
+  background: var(--primary-color);
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 4rem
+}
+
+#banner .signup-banner h1 {
+  font-size: 2rem;
+}
+
+#banner .signup-banner .subscribe {
+ background-color: var(--purple-color);
+ /* height: 2.5rem; */
+ padding: .35rem .5rem;
+ width: 400px;
+ border-radius: 10px;
+ text-align: right;
+ color: var(--white-color);
+}
+
+#banner .signup-banner .subscribe button {
+  padding: .65rem 1.5rem;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  color: var(--heading-color);
+  font-weight: 700;
+
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+  content: attr(data-text)
+}
+
+#footer {
+  margin-bottom: 2rem;
+}
+
+#footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer .footer-content h3 {
+  margin-bottom: 2.5rem;
+  color: var(--heading-color)
+}
+
+#footer .footer-content ul li {
+  margin-top: 1.5rem;
+}
+
+.socials {
+  margin-top: 3rem;
+}
+
+.socials a {
+  color: var(--text-color);
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+.address {
+  margin: 4rem 0 2rem 0;
+}
+
+.address p {
+  margin-bottom: .75rem;
+  font-size: .85rem;
+  font-weight: bold;
+  color: var(--heading-color);
+  text-transform: capitalize;
+}
+
+.terms {
+  margin-top: 2.5rem;
+  font-size: .5rem
+}
+
+.terms p {
+  text-transform: capitalize;
+  margin-top: 1rem;
+
+}
+
+.terms a {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.terms a span {
+  color: var(--text-color);
+}
+
+.footer-base {
+  margin-bottom: 10rem;
+}
+
+.footer {
+  padding: 3rem;
+  text-align: center;
+  font-size: .75rem;
+  text-transform: capitalize;
+}
+
